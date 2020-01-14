@@ -3,12 +3,12 @@ routes:
 collections:
   /:
     permalink: /{slug}/
-    template: index
-    filter: 'tag:-es'
-  /es/:
-    permalink: /es/{slug}/
     template: indexs
-    filter: 'tag:es'
+    filter: tag:-es
+  /en/:
+    permalink: /en/{slug}/
+    template: indexs-es
+    filter: tag:es
 
 taxonomies:
   tag: /tag/{slug}/
